@@ -1,11 +1,11 @@
 <p align="center">
   <h1 align="center">SurfSplat: Conquering Feedforward 2D Gaussian Splatting with Surface Continuity Priors</h1>
   <p align="center">
-    <a href="https://haofeixu.github.io/">Bing He</a>
+    <a href="https://www.linkedin.com/in/he-bing-2aab86346/">Bing He</a>
     ·
-    <a href="https://github.com/G-1nOnly"">Jingnan Gao</a>
+    <a href="https://g-1nonly.github.io">Jingnan Gao</a>
     ·
-    <a href="https://github.com/G-1nOnly">Yunuo Chen</a>
+    <a href="https://github.com/UnoC-727">Yunuo Chen</a>
     ·
     Ning Cao
     ·
