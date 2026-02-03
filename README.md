@@ -19,7 +19,8 @@
   </p>
   <h3 align="center">ICLR 2026</h3>
   <div align="center">
-    <a href="https://arxiv.org/abs/2601.xxxxx"><img src="https://img.shields.io/badge/arXiv-2601.xxxxx-b31b1b.svg" alt="arXiv"></a>
+    <a href="https://arxiv.org/abs/2602.02000"><img src="https://img.shields.io/badge/arXiv-2602.02000-b31b1b.svg" alt="arXiv"></a>
+    <a href="https://hebing-sjtu.github.io/SurfSplat-website/"><img src="https://img.shields.io/badge/Project-Page-green" alt="Project Page"></a>
   </div>
 </p>
 
