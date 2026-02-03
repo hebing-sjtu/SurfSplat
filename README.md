@@ -30,8 +30,8 @@
 **The official code and data for this paper are currently being organized.** We are finalizing the documentation and cleaning up the source code to ensure reproducibility. We expect to release the full repository by **[2, 2026]**.
 
 ### 📅 Roadmap
-- [ ] Release arXiv preprint.
-- [ ] Launch project website.
+- [✅] Release arXiv preprint.
+- [✅] Launch project website.
 - [ ] Release training code.
 - [ ] Release inference code and checkpoints.
 - [ ] Release preprocessed scannet dataset.
@@ -48,9 +48,12 @@
 If you find our work helpful, please consider citing:
 
 ```bibtex
-@article{lastname2026title,
-  title={Your Paper Title},
-  author={Lastname, Firstname and Lastname, Firstname},
-  journal={arXiv preprint arXiv:2601.xxxxx},
-  year={2026}
+@misc{he2026surfsplatconqueringfeedforward2d,
+      title={SurfSplat: Conquering Feedforward 2D Gaussian Splatting with Surface Continuity Priors}, 
+      author={Bing He and Jingnan Gao and Yunuo Chen and Ning Cao and Gang Chen and Zhengxue Cheng and Li Song and Wenjun Zhang},
+      year={2026},
+      eprint={2602.02000},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2602.02000}, 
 }
