@@ -1,0 +1,3 @@
+[submodule "submodules/rasterization"]
+	path = submodules/rasterization
+	url = git@github.com:hebing-sjtu/rasterization-w-alpha-depth.git
