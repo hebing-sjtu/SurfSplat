@@ -24,7 +24,15 @@
   </div>
 </p>
 
+
 ---
+
+
+## 🖼️ Methodology
+*SurfSplat, a feedforward framework based on 2D Gaussian Splatting (2DGS) primitive, which provides stronger anisotropy and higher geometric precision. By incorporating a surface continuity prior and a forced alpha blending strategy, SurfSplat reconstructs coherent geometry together with faithful textures.*
+
+---
+
 
 ### 📅 Roadmap
 - [✅] Release arXiv preprint.
@@ -36,10 +44,6 @@
 
 ---
 
-## 🖼️ Methodology
-*SurfSplat, a feedforward framework based on 2D Gaussian Splatting (2DGS) primitive, which provides stronger anisotropy and higher geometric precision. By incorporating a surface continuity prior and a forced alpha blending strategy, SurfSplat reconstructs coherent geometry together with faithful textures.*
-
----
 
 ## Repository
 
