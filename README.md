@@ -39,7 +39,7 @@ https://github.com/user-attachments/assets/8d8aca5b-3ccb-4614-a6d3-508c2a920067
 - [✅] Release arXiv preprint.
 - [✅] Launch project website.
 - [✅] Release training code.
-- [ ] Release inference code and checkpoints.
+- [✅] Release inference code and checkpoints.
 - [ ] Release preprocessed scannet dataset.
 - [ ] Release mesh extraction code.
 
@@ -87,7 +87,7 @@ cd ...
 
 ## Model Zoo
 
-Our pre-trained models will be hosted on Hugging Face 🤗.
+Our pre-trained models will be hosted on [Hugging Face 🤗](https://huggingface.co/binghe-sjtu/SurfSplat).
 
 ---
 
