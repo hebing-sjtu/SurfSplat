@@ -5,7 +5,7 @@
 # mode=test \
 # wandb.name=re10k \
 # dataset/view_sampler=evaluation \
-# checkpointing.load=pretrained/re10k-256x256-surfsplat-small/checkpoints/epoch_18-step_300000.ckpt \
+# checkpointing.pretrained_model=checkpoints/ckpt/re10k-256x256-surfsplat-small.pth \
 # test.save_image=true \
 # test.save_gt_image=true \
 # test.save_input_images=true \
@@ -24,7 +24,7 @@
 # model.encoder.upsample_factor=2 \
 # model.encoder.lowest_feature_resolution=4 \
 # model.encoder.monodepth_vit_type=vitb \
-# checkpointing.load=checkpoints/re10k-256x256-surfsplat-base/checkpoints/epoch_72-step_600000.ckpt \
+# checkpointing.pretrained_model=checkpoints/ckpt/re10k-256x256-surfsplat-base.pth \
 # test.save_image=true \
 # test.save_gt_image=true \
 # test.save_input_images=true \
@@ -43,7 +43,7 @@
 # model.encoder.upsample_factor=2 \
 # model.encoder.lowest_feature_resolution=4 \
 # model.encoder.monodepth_vit_type=vitl \
-# checkpointing.load=checkpoints/re10k-256x256-surfsplat-large/checkpoints/epoch_72-step_600000.ckpt \
+# checkpointing.pretrained_model=checkpoints/ckpt/re10k-256x256-surfsplat-large.pth \
 # test.save_image=true \
 # test.save_gt_image=true \
 # test.save_input_images=true \
@@ -62,7 +62,7 @@
 # model.encoder.upsample_factor=2 \
 # model.encoder.lowest_feature_resolution=4 \
 # model.encoder.monodepth_vit_type=vitb \
-# checkpointing.load=checkpoints/re10k-256x448-surfsplat-base/checkpoints/epoch_72-step_600000.ckpt \
+# checkpointing.pretrained_model=checkpoints/ckpt/re10k-256x448-surfsplat-base.pth \
 # test.save_image=true \
 # test.save_gt_image=true \
 # test.save_input_images=true \
