@@ -64,6 +64,11 @@ class DecoderSplattingCUDA(Decoder[DecoderSplattingCUDACfg]):
             else self.render_depth(
                 gaussians, extrinsics, intrinsics, near, far, image_shape, depth_mode
             ),
+            None
+            if depth_mode is None
+            else self.render_normal(
+                gaussians, extrinsics, intrinsics, near, far, image_shape, depth_mode
+            ),
         )
 
     def render_depth(

@@ -297,7 +297,7 @@ def render_normal_cuda(
     gaussian_normals: Float[Tensor, "batch gaussian 3"],
     scale_invariant: bool = True,
     mode: DepthRenderingMode = "depth",
-) -> Float[Tensor, "batch height width"]:
+) -> Float[Tensor, "batch 3 height width"]:
     # Specify colors according to Gaussian depths.
     fake_color = gaussian_normals
 

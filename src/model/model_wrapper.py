@@ -420,7 +420,6 @@ class ModelWrapper(LightningModule):
                 for idx, color in zip(index, input_images):
                     save_image(color, path / "images" / scene / f"color/input_{idx:0>6}.png")
                     
-        batch["context"]["image"] = upsample_gt_img(batch["context"]["image"], 0.5, mode="bilinear")
         _, _, _, h, w = batch["context"]["image"].shape
         
         # save depth vis
@@ -598,7 +597,6 @@ class ModelWrapper(LightningModule):
 
             if self.train_cfg.forward_depth_only:
                 return
-
         images_prob = output.color[0]
         images_prob2 = output2.color[0]
         images_prob3 = output3.color[0]
@@ -606,9 +604,9 @@ class ModelWrapper(LightningModule):
             depths_prob = output.depth[0]
             depths_prob2 = output2.depth[0]
             depths_prob3 = output3.depth[0]
-            normals_prob = output.normals[0]
-            normals_prob2 = output2.normals[0]
-            normals_prob3 = output3.normals[0]
+            normals_prob = output.normal[0]
+            normals_prob2 = output2.normal[0]
+            normals_prob3 = output3.normal[0]
         else:
             depths_prob = None
             depths_prob2 = None
@@ -624,8 +622,8 @@ class ModelWrapper(LightningModule):
         # Save images.
         if scene in test_scene_names:
             if self.test_cfg.save_image:
-                for index, gt, depth, depth2, depth3, color, color2, color3 in zip(
-                    batch["target"]["index"][0], rgb_gt2,  depths_prob, depths_prob2, depths_prob3, 
+                for index, gt, depth, depth2, depth3, normal, normal2, normal3, color, color2, color3 in zip(
+                    batch["target"]["index"][0], rgb_gt, depths_prob, depths_prob2, depths_prob3, 
                     normals_prob, normals_prob2, normals_prob3, images_prob, images_prob2, images_prob3
                 ):
                     save_image(color, path / "images" / scene / f"color/{index:0>6}.png")
@@ -643,9 +641,9 @@ class ModelWrapper(LightningModule):
                         save_image(depth_viz, path / "images" / scene / "depth" / f"{index:0>6}.png")
                         save_image(depth2_viz, path / "images" / scene / "depth" / f"{index:0>6}_x2.png")
                         save_image(depth3_viz, path / "images" / scene / "depth" / f"{index:0>6}_x4.png")
-                        normal_viz = viz_normal_tensor(normals_prob, return_float=True)
-                        normal2_viz = viz_normal_tensor(normals_prob2, return_float=True)
-                        normal3_viz = viz_normal_tensor(normals_prob3, return_float=True)
+                        normal_viz = viz_normal_tensor(normal, return_float=True)
+                        normal2_viz = viz_normal_tensor(normal2, return_float=True)
+                        normal3_viz = viz_normal_tensor(normal3, return_float=True)
                         save_image(normal_viz, path / "images" / scene / "normal" / f"{index:0>6}.png")
                         save_image(normal2_viz, path / "images" / scene / "normal" / f"{index:0>6}_x2.png")
                         save_image(normal3_viz, path / "images" / scene / "normal" / f"{index:0>6}_x4.png")

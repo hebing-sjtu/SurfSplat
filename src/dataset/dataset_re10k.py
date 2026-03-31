@@ -130,7 +130,6 @@ class DatasetRE10k(IterableDataset):
                 example = chunk[run_idx // times_per_scene]
                 extrinsics, intrinsics = self.convert_poses(example["cameras"])
                 scene = example["key"]
-
                 try:
                     context_indices, target_indices = self.view_sampler.sample(
                         scene,

@@ -6,7 +6,7 @@ import cv2
 from matplotlib.cm import get_cmap
 import matplotlib as mpl
 import matplotlib.cm as cm
-
+import torch.nn.functional as F
 
 # https://github.com/autonomousvision/unimatch/blob/master/utils/visualization.py
 
@@ -48,15 +48,15 @@ def viz_normal_tensor(normal, return_numpy=False, return_float=False):
     Maps values from [-1, 1] to [0, 255] (RGB).
     
     Args:
-        normal (torch.Tensor): Input tensor of shape (N, 3, H, W) or (3, H, W).
-        return_numpy (bool): If True, returns numpy array [N, H, W, 3] or [H, W, 3] (uint8).
+        normal (torch.Tensor): Input tensor of shape (3, H, W).
+        return_numpy (bool): If True, returns numpy array [H, W, 3] (uint8).
         return_float (bool): If True, returns tensor in range [0, 1] (float). 
                              Default returns tensor in range [0, 255] (uint8).
     """
     assert isinstance(normal, torch.Tensor)
-    normal = F.normalize(normal, dim=1, p=2)
+    normal = F.normalize(normal, dim=0, p=2)
     
-    vis_data = normal.detach().permute(0, 2, 3, 1).cpu().numpy()[0]
+    vis_data = normal.detach().permute(1, 2, 0).cpu().numpy()
     vis_data = (vis_data + 1.0) * 0.5 * 255.0
     vis_data = np.clip(vis_data, 0, 255).astype(np.uint8) # [H, W, 3]
     

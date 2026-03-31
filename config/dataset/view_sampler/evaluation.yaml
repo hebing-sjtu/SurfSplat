@@ -1,4 +1,4 @@
 name: evaluation
 
-index_path: assets/dl3dv_start_0_distance_10_ctx_2v_tgt_4v.json
+index_path: assets/evaluation_index_re10k.json
 num_context_views: 2

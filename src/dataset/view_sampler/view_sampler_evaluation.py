@@ -35,7 +35,7 @@ class ViewSamplerEvaluation(ViewSampler[ViewSamplerEvaluationCfg]):
         super().__init__(cfg, stage, is_overfitting, cameras_are_circular, step_tracker)
 
         dacite_config = Config(cast=[tuple])
-        cfg.index_path=Path("assets/dl3dv_start_0_distance_10_ctx_2v_tgt_4v.json")
+        # cfg.index_path=Path("assets/dl3dv_start_0_distance_10_ctx_2v_tgt_4v.json")
         with cfg.index_path.open("r") as f:
             self.index = {
                 k: None if v is None else from_dict(IndexEntry, v, dacite_config)

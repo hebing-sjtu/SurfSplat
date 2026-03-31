@@ -4,7 +4,8 @@
 # python -m src.main +experiment=re10k \
 # mode=test \
 # wandb.name=re10k \
-# checkpointing.load=checkpoints/re10k-256x256-surfsplat-small/checkpoints/epoch_18-step_300000.ckpt \
+# dataset/view_sampler=evaluation \
+# checkpointing.load=pretrained/re10k-256x256-surfsplat-small/checkpoints/epoch_18-step_300000.ckpt \
 # test.save_image=true \
 # test.save_gt_image=true \
 # test.save_input_images=true \
@@ -18,6 +19,7 @@
 # python -m src.main +experiment=re10k \
 # mode=test \
 # wandb.name=re10k \
+# dataset/view_sampler=evaluation \
 # model.encoder.num_scales=2 \
 # model.encoder.upsample_factor=2 \
 # model.encoder.lowest_feature_resolution=4 \
@@ -36,6 +38,7 @@
 # python -m src.main +experiment=re10k \
 # mode=test \
 # wandb.name=re10k \
+# dataset/view_sampler=evaluation \
 # model.encoder.num_scales=2 \
 # model.encoder.upsample_factor=2 \
 # model.encoder.lowest_feature_resolution=4 \
@@ -54,6 +57,7 @@
 # python -m src.main +experiment=re10k \
 # mode=test \
 # wandb.name=re10k \
+# dataset/view_sampler=evaluation \
 # model.encoder.num_scales=2 \
 # model.encoder.upsample_factor=2 \
 # model.encoder.lowest_feature_resolution=4 \
