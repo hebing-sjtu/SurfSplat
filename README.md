@@ -140,12 +140,9 @@ The camera extrinsic matrices follow the OpenCV convention for camera-to-world t
 If you find our work helpful, please consider citing:
 
 ```bibtex
-@misc{he2026surfsplatconqueringfeedforward2d,
-      title={SurfSplat: Conquering Feedforward 2D Gaussian Splatting with Surface Continuity Priors}, 
-      author={Bing He and Jingnan Gao and Yunuo Chen and Ning Cao and Gang Chen and Zhengxue Cheng and Li Song and Wenjun Zhang},
-      year={2026},
-      eprint={2602.02000},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2602.02000}, 
+@inproceedings{he2026surfsplat,
+  title={SurfSplat: Conquering Feedforward 2D Gaussian Splatting with Surface Continuity Priors},
+  author={Bing He and Jingnan Gao and Yunuo Chen and Ning Cao and Gang Chen and Zhengxue Cheng and Li Song and Wenjun Zhang},
+  booktitle={The Fourteenth International Conference on Learning Representations},
+  year={2026}
 }
